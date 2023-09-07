@@ -1,0 +1,30 @@
+---
+title: "switchPersonal"
+author: "Lizzet Mendoza Esteban"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Operador switch
+
+```{r}
+Colordecabello="Pelirrojo"
+
+switch(
+Colordecabello,
+"Pelirrojo"={respuesta="Denota la expresión de la fuerza vital, el impulso y las ganas de conquista."},
+"Rubio"={respuesta="Transmiten cierta confianza y bienestar, color de la victoria, de la fama y el lujo."},
+"Morado"={respuesta="Representa la sangre real que corre por las venas de una persona valiente y luchadora."},
+"Rosa"={respuesta="Transmite una personalidad dulce y sentimental de una persona que busca siempre un final feliz."},
+"Plata"={respuesta="Mezcla la esencia de la sabiduría con la elegancia,  iluminan y transmiten lujo, modernidad y brillantez."},
+
+{respuesta="Significado del teñido de tu pelo..."}
+
+)
+respuesta
+```
+
